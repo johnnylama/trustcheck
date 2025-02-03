@@ -183,3 +183,12 @@
     height: 45px;
     margin-left: 5.5rem !important;
 }
+
+
+/* Ocultar el ::after en pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-logo-quienesSomos-custom {
+        
+        margin-left: 1.5rem !important;
+    }
+}
