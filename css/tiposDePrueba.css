@@ -1,0 +1,56 @@
+.tiposDePrueba {
+    /* Gradiente para dividir los colores */
+    background: linear-gradient(to bottom, var(--background-dark-grey) 65%, var(--background-light) 65%);
+    color: var(--text-light);
+     
+}
+
+.cardTiposDePrueba {
+    border-radius: 35px !important;
+}
+
+.cardTiposDePrueba .card {
+    border-radius: 35px !important;
+    margin: 30px;
+    /* Sombra elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
+    0 1px 3px rgba(0, 0, 0, 0.1);
+border-radius: 15px; /* Opcional: Bordes redondeados */
+}
+
+/* Centrar y ajustar tamaño de la imagen del ícono */
+.icono-card {
+    width: 120px; /* Ancho fijo */
+    height: 150px; /* Mantener proporción */
+    display: block; /* Asegurar que sea un bloque */
+    margin: 20px auto; /* Centrar horizontal y agregar espacio superior/inferior */
+    object-fit: contain; /* Ajustar la imagen para que no se deforme */
+}
+
+/* Estilo para el título con la línea roja */
+.cardTiposDePrueba .card-title {
+    position: relative;
+   
+}
+
+.cardTiposDePrueba .card-text {
+    position: relative;
+   
+}
+
+.cardTiposDePrueba .card-second-text {
+    position: relative;
+   
+    font-style: italic; /* Texto en cursiva */
+    text-align: left;
+}
+
+.cardTiposDePrueba .card-title::after {
+    content: '';
+    display: block;
+    width: 25%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    background-color: var(--primary-color); /* Color de la línea */
+    margin: 10px auto 0; /* Centrar debajo del texto */
+    border-radius: 2px; /* Esquinas redondeadas */
+}

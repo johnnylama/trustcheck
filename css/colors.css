@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #F70021;
+    --secondary-color: #13205F;
+    --background-light: #f2f2f2;
+    --whatsapp-color: #25d366;
+    --text-light: #ffffff;
+    --background-dark: #262B35;
+    --background-dark-grey: #262B35; 
+    --background-light-grey-01: #c9d8f1;
+    --background-light-grey-02: #DDE8F9;
+}
+
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.background-primary-color {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.text-light-color {
+    color: var(--text-light)!important;
+}
+
+.background-light-grey-01 {
+    background-color: var(--background-light-grey-01);
+}

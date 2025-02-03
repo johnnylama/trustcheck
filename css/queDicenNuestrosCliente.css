@@ -1,0 +1,86 @@
+.testimonial-card {
+    border-radius: 15px; /* Bordes redondeados */
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    max-width: 500px; /* Ancho máximo del card */
+    border: none; /* Sin borde */
+    position: relative;
+    overflow: visible; /* Permite que el pseudo-elemento sobresalga */
+}
+
+/* Pseudo-elemento para la punta */
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    bottom: -27px;
+    left: 0px;
+    width: 106px;
+    height: 129px;
+    background: #fff;
+    clip-path: polygon(0 100%, 57% 76%, 0 0);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Texto del testimonial */
+.testimonial-text {
+    font-size: 1.1rem;
+   
+    color: #333;
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+/* Icono de comillas */
+.testimonial-quote {
+    position: absolute;
+    bottom: -58px;
+    right: 13px;
+    font-size: 4rem;
+    color: #cbd5e1; /* Color azul claro */
+}
+
+/* Contenedor del logo */
+.testimonial-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo del logo */
+.testimonial-logo-img {
+    width: 40px; /* Ancho del logo */
+    height: auto; /* Mantener proporción */
+}
+
+.testimonial-section {
+    position: relative; /* Habilita el pseudo-elemento dentro del contenedor */
+    background-color: #F7F7F7;
+    padding: 50px 15px;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+/* Pseudo-elemento para la mitad vertical del rombo */
+.testimonial-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 50%;
+    height: 100%;
+    background: var(--primary-color); /* Color del rombo */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Define la mitad derecha del rombo */
+    z-index: 1; /* Coloca el rombo detrás del contenido principal */
+}
+
+/* Asegurar que los elementos principales queden encima del rombo */
+.testimonial-section .row {
+    position: relative;
+    z-index: 2;
+}
+
+/* Ocultar el ::after en pantallas pequeñas */
+@media (max-width: 768px) {
+    .testimonial-section::after {
+        display: none; /* Oculta el pseudo-elemento */
+    }
+}
+

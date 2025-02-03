@@ -1,0 +1,43 @@
+#accordion02 .collapsible-link::before {
+    content: '';
+    width: 30px; /* Ancho del ícono horizontal */
+    height: 3px; /* Grosor */
+    background: #333;
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+    right: 1.5rem; /* Ajusta la posición horizontal */
+    display: block;
+    transition: all 0.3s;
+}
+
+#accordion02 .collapsible-link::after {
+    content: '';
+    width: 3px; /* Grosor del ícono vertical */
+    height: 33px; /* Alto */
+    background: #333;
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+    right: calc(1.5rem + 12px); /* Ajusta la posición horizontal */
+    display: block;
+    transition: all 0.3s;
+}
+
+#accordion02 .collapsible-link[aria-expanded='true']::after {
+    transform: translateY(-50%) rotate(90deg); /* Ajuste al abrir */
+}
+
+#accordion02 .collapsible-link[aria-expanded='true']::before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#accordion02 .accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.masFaqsButton {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}

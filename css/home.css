@@ -1,0 +1,17 @@
+
+.dividerHome {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+.dark-grey-background{
+    background-color: var(--background-dark-grey);
+}
+
+.dark-light-01-background{
+    background-color: var(--background-light-grey-01);
+}
+
+.dark-light-02-background{
+    background-color: var(--background-light-grey-02);
+}

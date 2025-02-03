@@ -1,0 +1,48 @@
+/* Contenido arriba de las dos capas */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--text-light);
+
+}
+
+.logo-hero-content {
+
+    display: inline-block;
+    background-image: var(--img-logo-completo-blanco);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 195px;
+
+}
+
+.hc-firstText {
+    
+    
+}
+
+.hc-secondText {
+    
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+@media (max-width: 768px) { /* Solo en pantallas pequeñas */
+    .responsive-center {
+        text-align: center !important; /* Centra el texto */
+    }
+    .responsive-center .hc-firstText,
+    .responsive-center .hc-secondText {
+        text-align: center  !important; /* Centra los spans */
+        margin-left: 0 !important; /* Elimina el margen izquierdo */
+    }
+}
+
+.hero-quienesSomos-content {
+color: var(--text-light);
+}
+
+.hero-metodologia-content {
+    color: var(--text-light);
+    margin-top: 200px;
+}

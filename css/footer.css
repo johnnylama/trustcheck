@@ -1,0 +1,66 @@
+/* Background for the header */
+.header-section {
+    background: #f5f9ff; /* Light blue background */
+    background-image: url('../assets/img/home/footer.png');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Logo styling */
+.logo-header {
+    max-width: 120px; /* Adjust size */
+}
+
+/* Navigation menu styling */
+.nav-link {
+    color: #1d3557; /* Dark blue */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e63946; /* Highlight color */
+}
+
+/* Keyframes for levitation */
+@keyframes levitate {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+        transform: translateY(-10px); /* Levita hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve a la posición inicial */
+    }
+}
+
+/* Estilo base del ícono */
+.icon-header {
+    color: #e63946; /* Color rojo */
+    font-size: 4rem;
+    animation: levitate 2s infinite ease-in-out; /* Aplica la animación de levitación */
+    transition: transform 0.3s ease; /* Suaviza otras transformaciones */
+}
+
+/* Opcional: hover para darle un brillo o cambio de color */
+.icon-header:hover {
+    color: #ff6b6b; /* Cambia a un tono más claro al pasar el cursor */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap; /* Wrap navigation links */
+    }
+    .nav-link {
+        padding: 0.5rem; /* Reduce padding */
+    }
+    .logo-header {
+        max-width: 100px; /* Adjust logo size */
+    }
+}

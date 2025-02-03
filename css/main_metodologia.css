@@ -1,0 +1,90 @@
+/* General container styling */
+.step-container {
+    border: 2px solid #0A539D; /* Azul oscuro para el borde */
+    border-radius: 0 0 30px 0;
+    padding: 20px;
+    position: relative;
+    
+    margin-bottom: 20px;
+}
+
+/* Step header */
+.step-header {
+    display: flex;
+    align-items: center;
+}
+
+.step-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #F70021;
+    margin-right: 10px;
+    top: -57px;
+    background-color: white;
+    position: absolute;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Step content */
+.step-content {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.step-content li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Triangle */
+.triangle {
+    width: 45px;
+    height: 30px;
+    background-color: #F70021; /* Rojo */
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* Ahora el triángulo apunta hacia abajo */
+    margin-top: -48px; /* Superpone el triángulo al borde */
+}
+
+/* Triangle */
+.triangle-02 {
+    width: 45px;
+    height: 30px;
+    background-color: #F70021; /* Rojo */
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* Ahora el triángulo apunta hacia abajo */
+    margin-top: -18px; /* Superpone el triángulo al borde */
+}
+
+.section-pasos {
+
+    background: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 10px, #e8e8e8 10px, #e8e8e8 20px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-number {
+        font-size: 2rem; /* Ajusta el tamaño del número */
+        top: -30px;
+    }
+    .step-title {
+        font-size: 1.2rem; /* Ajusta el tamaño del título */
+    }
+    .step-content li {
+        font-size: 0.9rem; /* Ajusta el tamaño del contenido */
+    }
+}
+
+
+.sticky-column {
+    position: sticky;
+    top: 20px; /* Distancia desde la parte superior al inicio del sticky */
+    align-self: start; /* Asegura que el sticky respete el flujo del diseño */
+    z-index: 10; /* Opcional, asegura que esté por encima si hay superposiciones */
+    background-color: white; /* Fondo blanco para mantener el contraste */
+    padding: 10px; /* Espaciado interno para evitar que el contenido toque el borde */
+}

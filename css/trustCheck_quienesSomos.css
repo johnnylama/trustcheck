@@ -1,0 +1,18 @@
+.custom-container {
+    position: relative;
+    background-color: var(--primary-color); /* Ajusta este color según lo necesites */
+    color: var(--text-light);
+}
+
+.custom-container:after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Altura del triángulo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; /* Ajusta el ancho del triángulo */
+    border-right: 20px solid transparent; /* Ajusta el ancho del triángulo */
+    border-top: 20px solid var(--primary-color); /* Color del triángulo, igual al fondo */
+}

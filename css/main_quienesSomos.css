@@ -1,0 +1,70 @@
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+.text-light-color {
+    color: var(--text-light)!important;
+}
+
+.linea-debajo-texto {
+    position: relative; /* Asegura que el pseudo-elemento ::after se posicione relativo al texto */
+    display: inline-block; /* Mantiene la línea ajustada al ancho del contenido */
+}
+
+.linea-debajo-texto::after {
+    content: '';
+    display: block;
+    width: 35%; /* Ancho de la línea, ajustable */
+    height: 5px; /* Grosor de la línea */
+    background-color: var(--secondary-color); /* Color de la línea */
+    margin: 5px 0 0; /* Espaciado entre el texto y la línea */
+    border-radius: 2px; /* Esquinas redondeadas */
+}
+
+.neon-card {
+    max-width: 95%; /* Limita el ancho de las tarjetas */
+    margin: auto; /* Centra las tarjetas dentro de sus columnas */
+    position: relative; /* Asegura que el efecto se limite a la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden; /* Contenido contenido dentro de los bordes */
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border: 2px solid transparent; /* Borde inicial transparente */
+}
+
+.neon-card:hover {
+    transform: translateY(-10px) scale(1); /* Eleva y amplía la tarjeta */
+    box-shadow: 
+        0 0 15px rgba(247, 0, 33, 0.6), /* Resplandor cercano */
+        0 0 30px rgba(247, 0, 33, 0.4), /* Resplandor intermedio */
+        0 0 45px rgba(247, 0, 33, 0.3); /* Resplandor lejano */
+    border: 2px solid rgba(247, 0, 33, 0.7); /* Borde con efecto neón */
+}
+
+.neon-card img {
+    transition: transform 0.3s ease; /* Suave ampliación de la imagen */
+}
+
+.neon-card:hover img {
+    transform: scale(1.1); /* Amplía la imagen para destacar */
+}
+
+.neon-card h3, .neon-card p {
+    transition: color 0.3s ease; /* Transición para los colores del texto */
+}
+
+.neon-card:hover h3 {
+    color: #F70021; /* Cambia el color del título para armonizar con el efecto */
+}
+
+.neon-card:hover p.text-muted {
+    color: #F70021; /* Cambia el color del texto */
+}
+
+.neon-card:hover .linea-debajo-texto::after {
+    background-color: #F70021; /* Cambia el color de la línea al hacer hover */
+}

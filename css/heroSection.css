@@ -1,0 +1,150 @@
+
+/*
+ var(--img-background-home)
+ var(--img-overlay-home)
+
+*/
+
+.hero-home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+}
+
+/* Primera imagen (antes estaba en .hero-home) */
+.hero-home::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: var(--img-background-home) no-repeat center center;
+    background-size: cover;
+    
+    /* Animación de aparición */
+    opacity: 0; 
+    animation: fadeInHeroBg 2s ease-in-out forwards;
+    z-index: 0; /* Detrás de todo */
+}
+
+/* Segunda imagen */
+.hero-home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 100%; 
+    height: 100%;
+    background: var(--img-overlay-home) no-repeat 200% center;
+    background-size: 70%;    
+    z-index: 1;
+    
+    /* Animación de aparición con un delay (1s) para que inicie después de la primera */
+    opacity: 0;
+    animation: fadeInOverlayBg 1s ease-in-out 1s forwards;
+}
+
+
+
+/* Keyframes para las animaciones */
+@keyframes fadeInHeroBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInOverlayBg {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-home::after {
+        background-image: none; /* Elimina la imagen secundaria */
+        height: 0; /* Reduce la altura del pseudo-elemento */
+    }
+}
+
+.hero-quienesSomos {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-quienesSomos) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-servicios {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-servicios) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-metodologia-01 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-metodologia-01) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-metodologia-02 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-metodologia-02) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-metodologia-03 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-metodologia-03) no-repeat center center;
+    background-size: cover;
+}
+
+.hero-metodologia-04 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Quita la background de aquí */
+    overflow: hidden;
+    background: var(--img-hero-metodologia-04) no-repeat center center;
+    background-size: cover;
+}

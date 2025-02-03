@@ -1,0 +1,185 @@
+@import url('images.css');
+
+/* Navbar base styles */
+.navbar-custom {
+    z-index: 9999; /* Un valor alto para que no quede detrás del hero */
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Navbar links */
+.navbar-custom .nav-link {
+    color: var(--text-light) !important;
+    position: relative;
+    transition: color 0.3s ease;
+    /* Suaviza el cambio de color */
+    border-radius: 5px;
+    /* Esquinas redondeadas como el estado active */
+    border: solid 1px transparent;
+    /* Inicialmente transparente */
+}
+
+/* Linea de subrayado (solo para no activos) */
+.navbar-custom .nav-link:not(.active)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-light);
+    transition: width 0.3s ease;
+}
+
+/* Hover effect: fondo cambia de izquierda a derecha */
+.navbar-custom .nav-link::before {
+    content: "";
+    /* Fondo animado */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Comienza dentro del elemento */
+    width: 0;
+    /* Ancho inicial */
+    height: 100%;
+    /* Altura completa del enlace */
+    background-color: var(--primary-color);
+    /* Color del fondo */
+    z-index: -1;
+    /* Aparece detrás del texto */
+    transition: width 0.3s ease-in-out;
+    /* Anima el ancho */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+}
+
+/* Hover styles */
+.navbar-custom .nav-link:hover::before {
+    width: 100%;
+    /* Extiende el fondo completamente dentro del enlace */
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--text-light) !important;
+    /* Texto permanece blanco */
+    z-index: 1;
+    /* Asegura que el texto esté por encima del fondo */
+    border: solid 1px var(--primary-color);
+    /* Aplica el mismo borde que el estado active */
+}
+
+/* Oculta el subrayado al hacer hover */
+.navbar-custom .nav-link:hover::after {
+    width: 0;
+}
+
+/* Active link styles */
+.navbar-custom .nav-link.active {
+    background-color:var(--primary-color);
+    /* Fondo cambia a secundario */
+    color: var(--text-light) !important;
+    /* Texto permanece blanco */
+    border-radius: 5px;
+    /* Opcional: esquinas redondeadas */
+    border: solid 1px var(--primary-color);
+    /* Borde del estado activo */
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.navbar-custom .nav-link.active::after {
+    display: none;
+    /* Elimina completamente el pseudo-elemento */
+}
+
+/* Navbar logo */
+.navbar-logo-custom {
+    margin-left: 5.5rem !important;
+}
+
+@media (max-width: 992px) {
+    .navbar-logo-custom {
+        margin-left: 1.5rem !important;
+    }
+
+    /* Estilo para el offcanvas */
+    .offcanvas-custom {
+
+        color: var(--secondary-color);
+        /* Texto del menú */
+    }
+
+    .offcanvas-custom .nav-link {
+        color: var(--secondary-color) !important;
+        /* Texto de los ítems en el menú */
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+        /* Espaciado entre ítems */
+        padding: 0.5rem 1rem;
+        /* Espaciado interno */
+        border-radius: 5px;
+        /* Esquinas redondeadas */
+        transition: all 0.3s ease;
+        /* Transiciones suaves */
+    }
+
+    .offcanvas-custom .nav-link:hover {
+        background-color: var(--secondary-color);
+        /* Fondo cambia a secundario */
+        color: var(--text-light) !important;
+        /* Texto blanco */
+    }
+
+    .offcanvas-custom .nav-link.active {
+        background-color: var(--secondary-color);
+        /* Fondo activo */
+        color: var(--text-light) !important;
+        /* Texto blanco */
+        border-radius: 5px;
+        /* Esquinas redondeadas */
+    }
+}
+
+/* Botón hamburguesa en blanco */
+.navbar-toggler {
+    border-color: var(--text-light);
+    /* Bordes blancos */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Líneas blancas */
+}
+
+/*Imagénes*/
+.navbar-logo-custom img {
+    content: var(--img-logo-navbar);
+    /* No aplica en `img` directamente, se usa `src` en HTML */
+    display: block;
+}
+
+.navbar-logo-custom {
+    background-image: var(--img-logo-navbar);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 45px;
+}
+
+
+/*Imagénes*/
+.navbar-logo-quienesSomos-custom img {
+    content: var(--img-logo-completo-blanco-horizontal);
+    /* No aplica en `img` directamente, se usa `src` en HTML */
+    display: block;
+}
+
+.navbar-logo-quienesSomos-custom {
+    background-image: var(--img-logo-completo-blanco-horizontal);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 45px;
+    margin-left: 5.5rem !important;
+}

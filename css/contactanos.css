@@ -1,0 +1,107 @@
+.contacto-section {
+    background-color: #F2F2F2;
+}
+
+.contacto-section h2 {
+    font-size: 2rem;
+}
+
+.contacto-section input,
+.contacto-section textarea {
+    background-color: transparent;
+    outline: none;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    border-color: #aaa;
+    font-size: 1rem;
+}
+
+.contacto-section input::placeholder,
+.contacto-section textarea::placeholder {
+    color: #aaa;
+}
+
+.contacto-section button {
+    background-color: #ba0909;
+    color: white;
+    font-size: 1rem;
+}
+
+.contacto-section button:hover {
+    background-color: #900606;
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: #1d3557 !important;
+}
+
+.bg-dark a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.bg-dark a:hover {
+    color: #e63946;
+}
+
+.redes-sociales-section {
+    background-color: var(--background-dark-grey);
+    /* Fondo oscuro */
+    color: #fff;
+    /* Texto blanco */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    /* Bordes superiores redondeados */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+}
+
+/* Ajusta el divisor para ocupar todo el alto del padre */
+.redes-sociales-section .divider {
+    margin: 0 10px;
+    border-left: 1px solid #fff;
+    height: 80%;
+    /* Ocupa todo el alto del padre */
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    /* Necesario para que tome referencia del padre */
+}
+
+.redes-sociales-section a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.redes-sociales-section a:hover {
+    color: #e63946;
+}
+
+/* Ocultar el ::after en pantallas pequeñas */
+@media (max-width: 768px) {
+    .redes-sociales-section {
+        /* Bordes superiores redondeados */
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .redes-sociales-section .divider {
+       display: none;
+    }
+    
+}
+
+/* En pantallas pequeñas */
+@media (max-width: 768px) {
+  
+    .contacto-section span {
+        font-size: 1.2rem; /* Ajusta el texto en pantallas pequeñas */
+    }
+}
+
+/*  */

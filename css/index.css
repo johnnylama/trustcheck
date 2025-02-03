@@ -1,0 +1,25 @@
+/* Importar variables de colores y estilos específicos */
+@import url('colors.css');
+@import url('navbar.css');
+@import url('heroSection.css');
+@import url('heroContent.css');
+@import url('home.css');
+@import url('accordion01.css');
+@import url('acordion02.css');
+@import url('tiposDePrueba.css');
+@import url('queDicenNuestrosCliente.css');
+@import url('ellosYaLoComprobaron.css');
+@import url('contactanos.css');
+@import url('footer.css');
+@import url('whatsapp.css');
+@import url('fonts.css');
+@import url('animation.css');
+@import url('main_quienesSomos.css');
+@import url('trustCheck_quienesSomos.css');
+@import url('main_servicios.css');
+@import url('main_metodologia.css');
+
+/* 
+* {
+    outline: 1px solid red;
+} */

@@ -1,0 +1,78 @@
+.row-arrowDown{
+    height: 300px;
+}
+
+.arrowDown-icon {
+    font-size: 4rem;
+}
+
+.linea-debajo-texto-servicios {
+    position: relative; /* Asegura que el pseudo-elemento ::after se posicione relativo al texto */
+   
+}
+
+.linea-debajo-texto-servicios::after {
+    content: '';
+    display: block;
+    width: 35%; /* Ancho de la línea, ajustable */
+    height: 5px; /* Grosor de la línea */
+    background-color: var(--primary-color); /* Color de la línea */
+    margin: 5px 0 0; /* Espaciado entre el texto y la línea */
+    border-radius: 2px; /* Esquinas redondeadas */
+}
+
+
+
+.cardProductos-servicios {
+    border-radius: 35px !important;
+}
+
+.cardProductos-servicios .card {
+    border-radius: 5px !important;
+    margin: 30px;
+    /* Sombra elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
+    0 1px 3px rgba(0, 0, 0, 0.1);
+border-radius: 15px; /* Opcional: Bordes redondeados */
+}
+
+/* Centrar y ajustar tamaño de la imagen del ícono */
+.icono-card {
+    width: 120px; /* Ancho fijo */
+    height: 150px; /* Mantener proporción */
+    display: block; /* Asegurar que sea un bloque */
+    margin: 20px auto; /* Centrar horizontal y agregar espacio superior/inferior */
+    object-fit: contain; /* Ajustar la imagen para que no se deforme */
+}
+
+.img-card{
+    width: 350px;
+}
+
+/* Estilo para el título con la línea roja */
+.cardProductos-servicios .card-title {
+    position: relative;
+   
+}
+
+.cardProductos-servicios .card-text {
+    position: relative;
+   
+}
+
+.cardProductos-servicios .card-second-text {
+    position: relative;
+   
+    font-style: italic; /* Texto en cursiva */
+    text-align: left;
+}
+
+.cardProductos-servicios .card-title::after {
+    content: '';
+    display: block;
+    width: 25%; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    background-color: var(--primary-color); /* Color de la línea */
+    margin: 10px auto 0; /* Centrar debajo del texto */
+    border-radius: 2px; /* Esquinas redondeadas */
+}
