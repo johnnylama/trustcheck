@@ -88,3 +88,18 @@
     background-color: white; /* Fondo blanco para mantener el contraste */
     padding: 10px; /* Espaciado interno para evitar que el contenido toque el borde */
 }
+
+.linea-debajo-texto-metodologia {
+    position: relative; /* Asegura que el pseudo-elemento ::after se posicione relativo al texto */
+    display: inline-block; /* Mantiene la línea ajustada al ancho del contenido */
+}
+
+.linea-debajo-texto-metodologia::after {
+    content: '';
+    display: block;
+    width: 100%; /* Ancho de la línea, ajustable */
+    height: 5px; /* Grosor de la línea */
+    background-color: var(--text-light); /* Color de la línea */
+    margin: 5px 0 0; /* Espaciado entre el texto y la línea */
+    border-radius: 2px; /* Esquinas redondeadas */
+}

@@ -2,7 +2,8 @@
 
 /* Navbar base styles */
 .navbar-custom {
-    z-index: 9999; /* Un valor alto para que no quede detrás del hero */
+    z-index: 9999;
+    /* Un valor alto para que no quede detrás del hero */
     width: 100%;
     position: absolute;
     top: 0;
@@ -76,7 +77,7 @@
 
 /* Active link styles */
 .navbar-custom .nav-link.active {
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     /* Fondo cambia a secundario */
     color: var(--text-light) !important;
     /* Texto permanece blanco */
@@ -99,6 +100,9 @@
 }
 
 @media (max-width: 992px) {
+
+
+
     .navbar-logo-custom {
         margin-left: 1.5rem !important;
     }
@@ -188,7 +192,26 @@
 /* Ocultar el ::after en pantallas pequeñas */
 @media (max-width: 768px) {
     .navbar-logo-quienesSomos-custom {
-        
+
         margin-left: 1.5rem !important;
     }
+
+
 }
+
+
+
+/* Nueva clase específica para evitar afectar a otros .nav-link */
+.neon-levitate {
+
+    color: var(--text-light);
+    background: var(--primary-color);
+    box-shadow: 0 0 2px red, 0 0 2px red, 0 0 2px red;
+   
+    position: relative;
+   
+}
+
+
+
+
