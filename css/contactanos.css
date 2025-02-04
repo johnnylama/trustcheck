@@ -1,9 +1,20 @@
+/* Fondo y estilos principales de la sección de contacto */
 .contacto-section {
     background-color: #F2F2F2;
 }
 
+.contacto-numeros {
+    margin-top: -15px;
+}
+
+.contacto-section-icon {
+    width: 35%; /* Tamaño del ícono */
+}
+
 .contacto-section h2 {
     font-size: 2rem;
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 .contacto-section input,
@@ -14,6 +25,8 @@
     border-width: 0 0 1px;
     border-color: #aaa;
     font-size: 1rem;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-bottom: 15px; /* Espaciado entre campos */
 }
 
 .contacto-section input::placeholder,
@@ -25,6 +38,10 @@
     background-color: #ba0909;
     color: white;
     font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Bordes redondeados para el botón */
+    padding: 10px 20px; /* Añade espaciado interno */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
 }
 
 .contacto-section button:hover {
@@ -32,76 +49,62 @@
     color: #fff;
 }
 
-.bg-dark {
-    background-color: #1d3557 !important;
-}
-
-.bg-dark a {
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.bg-dark a:hover {
-    color: #e63946;
-}
-
+/* Estilos de la sección de redes sociales */
 .redes-sociales-section {
     background-color: var(--background-dark-grey);
-    /* Fondo oscuro */
     color: #fff;
-    /* Texto blanco */
     position: relative;
     overflow: hidden;
     text-align: center;
-
-    /* Bordes superiores redondeados */
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-
+    padding: 20px 0; /* Añade espaciado vertical */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around; /* Distribuye elementos horizontalmente */
 }
 
-/* Ajusta el divisor para ocupar todo el alto del padre */
 .redes-sociales-section .divider {
     margin: 0 10px;
     border-left: 1px solid #fff;
     height: 80%;
-    /* Ocupa todo el alto del padre */
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    /* Necesario para que tome referencia del padre */
 }
 
 .redes-sociales-section a {
     text-decoration: none;
     font-size: 1rem;
     color: #fff;
+    transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
 }
 
 .redes-sociales-section a:hover {
     color: #e63946;
 }
 
-/* Ocultar el ::after en pantallas pequeñas */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
+    .contacto-numeros {
+        margin-top: 0px;
+    }
+
     .redes-sociales-section {
-        /* Bordes superiores redondeados */
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
+        flex-direction: column; /* Cambia a columna para pantallas pequeñas */
     }
 
     .redes-sociales-section .divider {
-       display: none;
+        display: none; /* Oculta el divisor en pantallas pequeñas */
     }
-    
-}
 
-/* En pantallas pequeñas */
-@media (max-width: 768px) {
-  
     .contacto-section span {
-        font-size: 1.2rem; /* Ajusta el texto en pantallas pequeñas */
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .contacto-section button {
+        width: 100%; /* Asegura que el botón ocupe todo el ancho en pantallas pequeñas */
     }
 }
-
-/*  */

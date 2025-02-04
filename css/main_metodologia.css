@@ -90,16 +90,23 @@
 }
 
 .linea-debajo-texto-metodologia {
-    position: relative; /* Asegura que el pseudo-elemento ::after se posicione relativo al texto */
-    display: inline-block; /* Mantiene la línea ajustada al ancho del contenido */
+    position: relative; /* Necesario para el pseudo-elemento ::after */
+    display: inline-block; /* Ajusta el ancho al contenido del texto */
+    text-align: center; /* Asegura que el texto esté centrado si es multilinea */
+    margin: 0 auto; /* Centra horizontalmente el elemento en contenedores con ancho definido */
 }
 
 .linea-debajo-texto-metodologia::after {
     content: '';
     display: block;
-    width: 100%; /* Ancho de la línea, ajustable */
+    width: 50%; /* Ancho de la línea decorativa */
     height: 5px; /* Grosor de la línea */
-    background-color: var(--text-light); /* Color de la línea */
-    margin: 5px 0 0; /* Espaciado entre el texto y la línea */
-    border-radius: 2px; /* Esquinas redondeadas */
+    background-color: var(--text-light); /* Color de la línea decorativa */
+    margin: 5px auto 0; /* Centra la línea horizontalmente y da espacio al texto */
+    border-radius: 2px; /* Bordes redondeados para la línea */
+}
+
+
+.row-arrowDown-metodologia{
+    height: 135px;
 }

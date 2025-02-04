@@ -2,7 +2,7 @@
 .whatsapp-float {
     position: fixed;
     bottom: 20px; /* Distancia desde la parte inferior */
-    right: 20px; /* Distancia desde la parte derecha */
+    right: 100px; /* Distancia desde la parte derecha */
     background-color: #25d366; /* Color de fondo de WhatsApp */
     color: white; /* Color del ícono */
     width: 80px; /* Ancho del contenedor */
@@ -23,4 +23,12 @@
 
 .whatsapp-icon {
     font-size: 28px; /* Tamaño del ícono */
+}
+
+@media (max-width: 768px) { /* Solo en pantallas pequeñas */
+    .whatsapp-float {
+       
+        right: 25px; /* Distancia desde la parte derecha */
+        
+    }
 }

@@ -9,11 +9,11 @@
 .logo-hero-content {
 
     display: inline-block;
-    background-image: var(--img-logo-completo-blanco);
+    background-image: var(--img-logo-completo-blanco-horizontal-02);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 195px;
+    width: 100%;
+    height: 125px;
 
 }
 
@@ -44,5 +44,5 @@ color: var(--text-light);
 
 .hero-metodologia-content {
     color: var(--text-light);
-    margin-top: 200px;
+   
 }

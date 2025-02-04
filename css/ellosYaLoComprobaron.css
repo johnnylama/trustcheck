@@ -1,5 +1,5 @@
 .clientes-section {
-    background-color: #f7f7f7; /* Fondo claro */
+    background-color: var(--text-light);
     position: relative; /* Permite pseudo-elementos */
     padding: 50px 15px;
 }
@@ -8,7 +8,8 @@
 .clientes-section h2 {
     color: #1d3557; /* Azul oscuro */
     font-size: 1.8rem; /* Tamaño del texto */
-    margin-bottom: 20px;
+   
+  
 }
 
 /* Estilo para los logos */

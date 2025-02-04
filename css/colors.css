@@ -16,7 +16,7 @@
 }
 
 .background-primary-color {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
     color: var(--text-light);
 }
 
