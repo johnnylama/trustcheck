@@ -1,0 +1,73 @@
+/* Estilos base y utilidades reutilizables */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--surface);
+    color: var(--text-body);
+    line-height: 1.6;
+}
+
+main {
+    display: block;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.section-spacing {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+    color: var(--text-muted-strong);
+    max-width: 760px;
+}
+
+.badge-eyebrow {
+    display: inline-block;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.shadow-soft {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-strong);
+    border-color: var(--primary-strong);
+}

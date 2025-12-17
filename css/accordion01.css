@@ -16,7 +16,7 @@ a:focus {
     display: block;
     width: 1.5px; /* Grosor de la línea */
     height: 100%;
-    background-color: #393c3d; /* Color de la línea */
+    background-color: var(--line-strong); /* Color de la línea */
     position: absolute;
     top: 0;
     left: 15px;
@@ -37,10 +37,10 @@ a:focus {
     display: block;
     padding: 10px 30px 10px 60px;
     margin: 0;
-    background: #fff;
+    background: var(--surface);
     font-size: 25px;
     letter-spacing: 1px;
-    color: #1d3557;
+    color: var(--accent-navy);
     border: none;
     border-radius: 0;
     position: relative;
@@ -53,7 +53,7 @@ a:focus {
     width: 30px;
     height: 29px;
     padding-left: 2px;
-    background: white;
+    background: var(--surface);
     border: 2px solid var(--primary-color);
     border-radius: 50%; /* Convierte el cuadro en círculo */
     font-size: 23px;
@@ -69,16 +69,16 @@ a:focus {
 /* Estilo para cuando el acordeón está colapsado */
 #accordion01 .accordion-button.collapsed:before {
     content: "\f111"; /* Ícono diferente para estado colapsado */
-    background: #fff;
-    border: 2px solid #6e8898;
-    color: #000;
+    background: var(--surface);
+    border: 2px solid var(--line-muted);
+    color: var(--text-body);
 }
 
 #accordion01 .accordion-body {
     margin-left: 40px;
-    background: #fff;
+    background: var(--surface);
     font-size: 15px;
-    color: #6f6f6f;
+    color: var(--text-muted-strong);
     line-height: 20px;
     letter-spacing: 1px;
 }
@@ -89,6 +89,6 @@ a:focus {
 }
 
 #accordion01 .accordion-button:not(.collapsed) {
-    background-color: white;
+    background-color: var(--surface);
     box-shadow: none;
 }

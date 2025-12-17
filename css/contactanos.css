@@ -1,6 +1,6 @@
 /* Fondo y estilos principales de la sección de contacto */
 .contacto-section {
-    background-color: #F2F2F2;
+    background-color: var(--surface-contrast);
 }
 
 .contacto-numeros {
@@ -23,7 +23,7 @@
     outline: none;
     border-radius: 0;
     border-width: 0 0 1px;
-    border-color: #aaa;
+    border-color: var(--border-neutral);
     font-size: 1rem;
     width: 100%; /* Asegura que ocupe todo el ancho */
     margin-bottom: 15px; /* Espaciado entre campos */
@@ -31,12 +31,12 @@
 
 .contacto-section input::placeholder,
 .contacto-section textarea::placeholder {
-    color: #aaa;
+    color: var(--border-neutral);
 }
 
 .contacto-section button {
-    background-color: #ba0909;
-    color: white;
+    background-color: var(--primary-strong);
+    color: var(--text-light);
     font-size: 1rem;
     border: none;
     border-radius: 50px; /* Bordes redondeados para el botón */
@@ -45,14 +45,14 @@
 }
 
 .contacto-section button:hover {
-    background-color: #900606;
-    color: #fff;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
 }
 
 /* Estilos de la sección de redes sociales */
 .redes-sociales-section {
     background-color: var(--background-dark-grey);
-    color: #fff;
+    color: var(--text-light);
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -66,7 +66,7 @@
 
 .redes-sociales-section .divider {
     margin: 0 10px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--text-light);
     height: 80%;
     display: inline-block;
     vertical-align: middle;
@@ -76,12 +76,12 @@
 .redes-sociales-section a {
     text-decoration: none;
     font-size: 1rem;
-    color: #fff;
+    color: var(--text-light);
     transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
 }
 
 .redes-sociales-section a:hover {
-    color: #e63946;
+    color: var(--primary-color);
 }
 
 /* Ajustes para pantallas pequeñas */

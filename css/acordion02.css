@@ -2,7 +2,7 @@
     content: '';
     width: 30px; /* Ancho del ícono horizontal */
     height: 3px; /* Grosor */
-    background: #333;
+    background: var(--text-body);
     position: absolute;
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajuste fino para centrar */
@@ -15,7 +15,7 @@
     content: '';
     width: 3px; /* Grosor del ícono vertical */
     height: 33px; /* Alto */
-    background: #333;
+    background: var(--text-body);
     position: absolute;
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajuste fino para centrar */

@@ -1,5 +1,9 @@
 /* Importar variables de colores y estilos específicos */
 @import url('colors.css');
+@import url('images.css');
+@import url('base.css');
+@import url('fonts.css');
+@import url('animation.css');
 @import url('navbar.css');
 @import url('heroSection.css');
 @import url('heroContent.css');
@@ -12,19 +16,7 @@
 @import url('contactanos.css');
 @import url('footer.css');
 @import url('whatsapp.css');
-@import url('fonts.css');
-@import url('animation.css');
 @import url('main_quienesSomos.css');
 @import url('trustCheck_quienesSomos.css');
 @import url('main_servicios.css');
 @import url('main_metodologia.css');
-
-/* 
-* {
-    outline: 1px solid red;
-} */
-
-body{
-    /* margin-left: 20px;
-    margin-right: 20px; */
-}

@@ -1,66 +1,63 @@
-/* Background for the header */
+/* Fondo e imagen del pie de página */
 .header-section {
-    background: #f5f9ff; /* Light blue background */
+    background: var(--surface-alt);
     background-image: url('../assets/img/home/footer.png');
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Logo styling */
+/* Logo */
 .logo-header {
-    max-width: 120px; /* Adjust size */
+    max-width: 120px;
 }
 
-/* Navigation menu styling */
-.nav-link {
-    color: #1d3557; /* Dark blue */
+/* Navegación del footer */
+.header-section .nav-link {
+    color: var(--accent-navy);
     font-size: 1rem;
     font-weight: bold;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #e63946; /* Highlight color */
+.header-section .nav-link:hover {
+    color: var(--primary-color);
 }
 
-/* Keyframes for levitation */
+/* Animación del ícono */
 @keyframes levitate {
     0% {
-        transform: translateY(0); /* Posición inicial */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* Levita hacia arriba */
+        transform: translateY(-10px);
     }
     100% {
-        transform: translateY(0); /* Vuelve a la posición inicial */
+        transform: translateY(0);
     }
 }
 
-/* Estilo base del ícono */
 .icon-header {
-    color: #e63946; /* Color rojo */
+    color: var(--primary-color);
     font-size: 4rem;
-    animation: levitate 2s infinite ease-in-out; /* Aplica la animación de levitación */
-    transition: transform 0.3s ease; /* Suaviza otras transformaciones */
+    animation: levitate 2s infinite ease-in-out;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Opcional: hover para darle un brillo o cambio de color */
 .icon-header:hover {
-    color: #ff6b6b; /* Cambia a un tono más claro al pasar el cursor */
+    color: var(--primary-soft);
 }
 
-
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .nav {
-        flex-wrap: wrap; /* Wrap navigation links */
+        flex-wrap: wrap;
     }
-    .nav-link {
-        padding: 0.5rem; /* Reduce padding */
+    .header-section .nav-link {
+        padding: 0.5rem;
     }
     .logo-header {
-        max-width: 100px; /* Adjust logo size */
+        max-width: 100px;
     }
 }

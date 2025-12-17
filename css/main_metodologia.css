@@ -1,14 +1,14 @@
-/* General container styling */
+/* Contenedor general de cada paso */
 .step-container {
-    border: 2px solid #0A539D; /* Azul oscuro para el borde */
+    border: 2px solid var(--accent-blue-strong);
     border-radius: 0 0 30px 0;
     padding: 20px;
     position: relative;
-    
     margin-bottom: 20px;
+    background-color: var(--surface);
 }
 
-/* Step header */
+/* Encabezado del paso */
 .step-header {
     display: flex;
     align-items: center;
@@ -17,21 +17,21 @@
 .step-number {
     font-size: 4rem;
     font-weight: bold;
-    color: #F70021;
+    color: var(--primary-color);
     margin-right: 10px;
     top: -57px;
-    background-color: white;
+    background-color: var(--surface);
     position: absolute;
 }
 
 .step-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-body);
     margin: 0;
 }
 
-/* Step content */
+/* Contenido del paso */
 .step-content {
     margin-top: 15px;
     padding-left: 20px;
@@ -42,71 +42,73 @@
     line-height: 1.6;
 }
 
-/* Triangle */
+/* Triángulos separadores */
 .triangle {
     width: 45px;
     height: 30px;
-    background-color: #F70021; /* Rojo */
-    clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* Ahora el triángulo apunta hacia abajo */
-    margin-top: -48px; /* Superpone el triángulo al borde */
+    background-color: var(--primary-color);
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    margin-top: -48px;
 }
 
-/* Triangle */
 .triangle-02 {
     width: 45px;
     height: 30px;
-    background-color: #F70021; /* Rojo */
-    clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* Ahora el triángulo apunta hacia abajo */
-    margin-top: -18px; /* Superpone el triángulo al borde */
+    background-color: var(--primary-color);
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+    margin-top: -18px;
 }
 
 .section-pasos {
-
-    background: repeating-linear-gradient(45deg, #f7f7f7, #f7f7f7 10px, #e8e8e8 10px, #e8e8e8 20px);
+    background: repeating-linear-gradient(
+        45deg,
+        var(--surface-soft),
+        var(--surface-soft) 10px,
+        var(--border-soft) 10px,
+        var(--border-soft) 20px
+    );
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .step-number {
-        font-size: 2rem; /* Ajusta el tamaño del número */
+        font-size: 2rem;
         top: -30px;
     }
     .step-title {
-        font-size: 1.2rem; /* Ajusta el tamaño del título */
+        font-size: 1.2rem;
     }
     .step-content li {
-        font-size: 0.9rem; /* Ajusta el tamaño del contenido */
+        font-size: 0.9rem;
     }
 }
-
 
 .sticky-column {
     position: sticky;
-    top: 20px; /* Distancia desde la parte superior al inicio del sticky */
-    align-self: start; /* Asegura que el sticky respete el flujo del diseño */
-    z-index: 10; /* Opcional, asegura que esté por encima si hay superposiciones */
-    background-color: white; /* Fondo blanco para mantener el contraste */
-    padding: 10px; /* Espaciado interno para evitar que el contenido toque el borde */
+    top: 20px;
+    align-self: start;
+    z-index: 10;
+    background-color: var(--surface);
+    padding: 10px;
 }
 
 .linea-debajo-texto-metodologia {
-    position: relative; /* Necesario para el pseudo-elemento ::after */
-    display: inline-block; /* Ajusta el ancho al contenido del texto */
-    text-align: center; /* Asegura que el texto esté centrado si es multilinea */
-    margin: 0 auto; /* Centra horizontalmente el elemento en contenedores con ancho definido */
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .linea-debajo-texto-metodologia::after {
     content: '';
     display: block;
-    width: 50%; /* Ancho de la línea decorativa */
-    height: 5px; /* Grosor de la línea */
-    background-color: var(--text-light); /* Color de la línea decorativa */
-    margin: 5px auto 0; /* Centra la línea horizontalmente y da espacio al texto */
-    border-radius: 2px; /* Bordes redondeados para la línea */
+    width: 50%;
+    height: 5px;
+    background-color: var(--text-light);
+    margin: 5px auto 0;
+    border-radius: 2px;
 }
 
-
-.row-arrowDown-metodologia{
+.row-arrowDown-metodologia {
     height: 135px;
 }

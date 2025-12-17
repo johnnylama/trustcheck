@@ -1,24 +1,20 @@
 .clientes-section {
     background-color: var(--text-light);
-    position: relative; /* Permite pseudo-elementos */
+    position: relative;
     padding: 50px 15px;
 }
 
 /* Estilo para el texto */
 .clientes-section h2 {
-    color: #1d3557; /* Azul oscuro */
-    font-size: 1.8rem; /* Tamaño del texto */
-   
-  
+    color: var(--accent-navy); /* Azul oscuro */
+    font-size: 1.8rem;
 }
 
 /* Estilo para los logos */
 .client-logo {
-   
-    transition: transform 0.3s ease; /* Efecto al pasar el cursor */
+    transition: transform 0.3s ease;
 }
 
 .client-logo:hover {
-    transform: scale(1.1); /* Zoom al pasar el cursor */
+    transform: scale(1.1);
 }
-

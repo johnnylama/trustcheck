@@ -1,11 +1,11 @@
 .testimonial-card {
-    border-radius: 15px; /* Bordes redondeados */
-    background: #fff; /* Fondo blanco */
-    padding: 20px; /* Espaciado interno */
-    max-width: 500px; /* Ancho máximo del card */
-    border: none; /* Sin borde */
+    border-radius: 15px;
+    background: var(--surface);
+    padding: 20px;
+    max-width: 500px;
+    border: none;
     position: relative;
-    overflow: visible; /* Permite que el pseudo-elemento sobresalga */
+    overflow: visible;
 }
 
 /* Pseudo-elemento para la punta */
@@ -16,17 +16,16 @@
     left: 0px;
     width: 106px;
     height: 129px;
-    background: #fff;
+    background: var(--surface);
     clip-path: polygon(0 100%, 57% 76%, 0 0);
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Texto del testimonial */
 .testimonial-text {
     font-size: 1.1rem;
-   
-    color: #333;
-    margin-bottom: 30px; /* Espaciado inferior */
+    color: var(--text-body);
+    margin-bottom: 30px;
 }
 
 /* Icono de comillas */
@@ -35,7 +34,7 @@
     bottom: -58px;
     right: 13px;
     font-size: 4rem;
-    color: #cbd5e1; /* Color azul claro */
+    color: var(--border-contrast);
 }
 
 /* Contenedor del logo */
@@ -47,15 +46,15 @@
 
 /* Estilo del logo */
 .testimonial-logo-img {
-    width: 40px; /* Ancho del logo */
-    height: auto; /* Mantener proporción */
+    width: 40px;
+    height: auto;
 }
 
 .testimonial-section {
-    position: relative; /* Habilita el pseudo-elemento dentro del contenedor */
-    background-color: #F7F7F7;
+    position: relative;
+    background-color: var(--surface-soft);
     padding: 50px 15px;
-    overflow: hidden; /* Oculta cualquier desbordamiento */
+    overflow: hidden;
 }
 
 /* Pseudo-elemento para la mitad vertical del rombo */
@@ -66,9 +65,9 @@
     right: -25%;
     width: 50%;
     height: 100%;
-    background: var(--primary-color); /* Color del rombo */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Define la mitad derecha del rombo */
-    z-index: 1; /* Coloca el rombo detrás del contenido principal */
+    background: var(--primary-color);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 1;
 }
 
 /* Asegurar que los elementos principales queden encima del rombo */
@@ -80,7 +79,6 @@
 /* Ocultar el ::after en pantallas pequeñas */
 @media (max-width: 768px) {
     .testimonial-section::after {
-        display: none; /* Oculta el pseudo-elemento */
+        display: none;
     }
 }
-
